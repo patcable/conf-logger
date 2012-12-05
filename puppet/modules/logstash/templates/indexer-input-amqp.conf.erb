@@ -1,0 +1,9 @@
+input {
+  amqp {
+    # ship logs to the 'rawlogs' fanout queue.
+    type	=> "all"
+    host	=> "127.0.0.1"
+    exchange	=> "rawlogs"
+    name	=> "rawlogs_consumer"
+  }
+}

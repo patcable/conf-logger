@@ -1,0 +1,16 @@
+input {
+        irc {
+                type => "irc"
+                channels => "<%= ircchan %>"
+                host => "<%= ircserv %>"
+                port => "<%= ircport %>"
+                nick => "<%= ircnick %>"
+                user => "<%= ircnick %>"
+        }
+        twitter {
+                type => "twitter"
+                keywords => "<%= twtags %>"
+                user => "<%= twuser %>"
+                password => "<%= twpass %>"
+        }
+}

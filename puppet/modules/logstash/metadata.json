@@ -1,0 +1,48 @@
+{
+  "name": "simonmcc-logstash",
+  "version": "0.0.4",
+  "source": "UNKNOWN",
+  "author": "Simon McCartney",
+  "license": "UNKNOWN",
+  "summary": "install & configure logstash, including dependencies & init scripts",
+  "description": "install & configure logstash & dependencies. \nlogstash can be retrived via http, packages or puppet\nsupports installing & configuring redis as required\nsupports redis & amqp for transport config\nsupport 3 distinct roles, indexer, shipper & web",
+  "project_page": "https://github.com/simonmcc/puppet-logstash",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "ae02b2d6c83f9c3874e396c84d3617dd",
+    "README.md": "a1c163a55674a9e100b0f03f452903b3",
+    "files/README": "cd90624aa91686b9efa19a2c611855e7",
+    "files/grok_patterns/firewalls": "70cb0345f1ee47ce96fc7c5aeacab3ce",
+    "files/grok_patterns/grok-patterns": "72897a3025c0e478cbcb7f45fe53aca0",
+    "files/grok_patterns/haproxy": "9da776a192319d259f568e21227906c5",
+    "files/grok_patterns/java": "f78bf3deed314f5e14ad2ff70adc8620",
+    "files/grok_patterns/linux-syslog": "97a7821fc1d5bd1792db4402e437d7a2",
+    "files/grok_patterns/nagios": "77e8cb4ca022de6608dc30d682a35670",
+    "files/grok_patterns/ruby": "6260849747703f33e1154a20523c99c3",
+    "files/grok_patterns/up-grok": "d41d8cd98f00b204e9800998ecf8427e",
+    "manifests/config.pp": "66bfc2b53b8c9c0a4cd1e75abd3f58f3",
+    "manifests/indexer.pp": "f922276499bd8f58784f67a3d8cb9c73",
+    "manifests/init.pp": "3477d0ed1bcd3f4fadc719c6d06d727d",
+    "manifests/javainitscript.pp": "c4a28f0efee6564545a490cc245c9b5c",
+    "manifests/package.pp": "f57120ec02a6278a6b8972a573abe250",
+    "manifests/redis.pp": "e6e8816428ceb2897d6cd73d4587c064",
+    "manifests/shipper.pp": "e6568f8c38736213a9099d02bcdbb666",
+    "manifests/user.pp": "f2b839d96a6a3785c5b8219d2c2c00c8",
+    "manifests/web.pp": "bd17f8bffc57fe7c7ef590e0a2cc4ba9",
+    "templates/indexer-filter.conf.erb": "7e84e4c828fbf821d2a1db46c84621f5",
+    "templates/indexer-input-amqp.conf.erb": "839714394fa7c399df84bb70ed1453d6",
+    "templates/indexer-input-redis.conf.erb": "7b4db72dbea33fd96e29f9455dd9d547",
+    "templates/indexer-output.conf.erb": "1a053f1ec3e7f0e0bb774437618093b0",
+    "templates/javainitscript.erb": "46591f8a85cff1e29a6905257b22bc1d",
+    "templates/redis.conf.erb": "e7ea8d785ccd7436f22f29b917134c4c",
+    "templates/shipper-filter.conf.erb": "8b46e1c3b4ff84342a9c4992ef5f02f2",
+    "templates/shipper-input.conf.erb": "f3c60c0b22cb84098e438e87cb85cde1",
+    "templates/shipper-output-amqp.conf.erb": "82cb780ecf9d6ca7f370da14fd3b7ec4",
+    "templates/shipper-output-redis.conf.erb": "228b5e6dc923545b1a3519a43b3e740f"
+  }
+}
