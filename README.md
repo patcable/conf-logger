@@ -7,9 +7,13 @@ instructions
 ------------
 * clone the puppet subdirectory into /etc/puppet
 * create appropriate hiera data in /etc/puppet/hieradata for ircserv, ircchan, ircnick, twtags, twuser, twpass
-* puppet apply 
+* puppet apply /etc/puppet/manifests/ls.pp
 
 You'll need to set up Kibana on your own -- for now.
+
+known bugs
+----------
+Hope you have no desire to join more than one channel or follow more than one hashtag.
 
 credits
 -------
